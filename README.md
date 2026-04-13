@@ -59,7 +59,36 @@ bayesian-update         thick-description         causal-loop              disco
 
 ## 快速开始
 
-### 安装
+### 发布到 GitHub（本地已安装者参考）
+
+如果你在本机修改了某个skill，想发布到GitHub分享：
+
+```bash
+# 1. 安装 gh（GitHub CLI）
+sudo apt install gh -y
+
+# 2. GitHub 授权（一次性）
+gh auth login
+
+# 3. 使用 hermes publish 命令
+# 注意：需要完整路径，因为 hermes 不在 PATH 里
+/home/litie/.hermes/hermes-agent/venv/bin/hermes skills publish \
+  /home/litie/.hermes/skills/academic-reasoning/<skill-name> \
+  --to github \
+  --repo litie19820816/academic-skills
+
+# 4. 首次 publish 会弹出浏览器让你授权 GitHub
+# 授权一次后后续自动带 token
+```
+
+常见问题：
+- `hermes: command not found` → 使用完整路径 `/home/litie/.hermes/hermes-agent/venv/bin/hermes`
+- `skill_path: Is a directory` → publish 接受的是**目录路径**，不是 `SKILL.md` 文件路径
+- `GitHub authentication required` → 先运行 `gh auth login`
+
+---
+
+## 安装
 
 从GitHub安装单个skill：
 
