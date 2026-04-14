@@ -1,4 +1,53 @@
-# Academic Reasoning Skills
+# Academic & Personal Brain Skills
+
+本仓库包含两个skill集合：
+
+1. **Academic Reasoning Skills** — 将社会科学方法论转化为AI推理框架
+2. **Personal Brain Skills** — 个人知识脑管理系统
+
+---
+
+## Personal Brain Skills
+
+源自 [garrytan/gbrain](https://github.com/garrytan/gbrain) 的启发。
+
+> 核心理念：**Thin harness, fat skills.** 用 markdown 文件作为知识存储载体，用结构化流程管理信息输入、检索和维护。你的大脑应该像一个情报分析室——每个实体都有档案，所有信息可溯源，所有引用有出处。
+
+### 核心原则
+
+| 原则 | 说明 |
+|------|------|
+| **归属规则** | 内容按主要主题归档，不按格式或来源 |
+| **可关注度门槛** | 不是所有东西都值得建档，垃圾档案污染搜索 |
+| **反向链接铁律** | 每个实体提及必须创建双向链接，图谱即智能 |
+| **引用要求** | 每个事实必须带 `[Source: ...]`，冲突时双引并存 |
+
+### Skills 清单
+
+| Skill | 用途 |
+|-------|------|
+| `personal-brain` | 核心原则、目录结构、工具说明 |
+| `brain-entity-detection` | 每条消息触发实体检测，将信号注入知识脑 |
+| `brain-ingest` | 摄取会议、文章、媒体、文档到知识脑 |
+| `brain-query` | 用三层搜索回答问题，附引用溯源 |
+| `brain-maintain` | 知识脑健康检查：反向链接、引用审计、整理验证 |
+
+### 目录结构
+
+```
+~/.hermes/brain/
+├── people/        # 人物档案
+├── companies/     # 公司/组织档案
+├── concepts/      # 概念/框架档案
+├── projects/      # 项目档案（副业、课程等）
+├── meetings/      # 会议记录
+├── media/         # 媒体内容（articles/videos/podcasts/social）
+└── sources/       # 仅用于批量原始数据
+```
+
+---
+
+## Academic Reasoning Skills
 
 将社会科学方法论转化为AI推理框架的skill集合，让AI具备结构化的定性分析能力。
 
